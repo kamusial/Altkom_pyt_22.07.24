@@ -1,4 +1,6 @@
 class BMW:
+
+    bagaznik = []
     def __init__(self, kolor: str = 'czarne', kondycja: int = 1, rocznik: int = 1900):
         self.kolor = kolor
         self.__ilosc_paliwa = 10
