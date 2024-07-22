@@ -21,3 +21,5 @@ def stworz_zapytanie_sql(tabela: str, *kolumny: str, **warunki) -> str:
 zapytanie1 = stworz_zapytanie_sql("uzytkownicy", "imie", "nazwisko", wiek=30)
 print(zapytanie1)
 
+zapytanie2 = stworz_zapytanie_sql("produkty", "nazwa", "cena", kategoria="biznes", kolor='czerwony')
+print(zapytanie2)
