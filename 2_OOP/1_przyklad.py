@@ -27,6 +27,7 @@ class BMW:
         else:
             print('tryb nierozpoznany, brak zmian')
 
+
     def tryb_eco(self):
         self.tryb_ekonomiczny = True
         self.spalanie_na_100 = 11
@@ -35,6 +36,7 @@ class BMW:
     def tryb_normal(self):
         self.tryb_ekonomiczny = False
         self.spalanie_na_100 = 14
+
 
     def odejmij_paliwo(self, ile):
         if self.__ilosc_paliwa <= ile:
