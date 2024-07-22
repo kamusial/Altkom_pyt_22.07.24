@@ -8,7 +8,10 @@ class Pracownik:
 
 worker1 = Pracownik("engineer", '1234')
 print(worker1)
+
+# print(worker1.__pesel)
 worker1.__pesel = '6789'
+worker1.pozycja = 'nowa'
 print(worker1)
-print(worker1.__pesel)
+
 
