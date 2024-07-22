@@ -45,3 +45,7 @@ print(moje_auto)
 print(moje_auto.uruchom_silnik())
 print(moje_auto.wlacz_klimatyzacje())
 
+moj_motor = Motocykl('Sozoku', 'brak', 2012, 'scigacz')
+print(moj_motor)
+print(moj_motor.uruchom_silnik())
+print(moj_motor.trik())
