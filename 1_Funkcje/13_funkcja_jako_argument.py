@@ -17,9 +17,21 @@ def przetworz_osoby(osoby, operacja):
 def jest_inz(osoba):
     return osoba['zawod'] == 'Inżynier'
 
+def jest_ponizej_30(osoba):
+    return osoba['wiek'] > 30
+
+
 # Operacje
 def pobierz_imie(osoba):
     return osoba['imie']
 
+def opis(osoba):
+    return f'{osoba['imie']} ma {osoba['wiek']} lat i jest {osoba['zawod']}.'
 
+
+inzynierowie = filtruj_osoby(osoby, jest_inz)
+print(f'Inzynierowie: {przetworz_osoby(inzynierowie, opis)}')
+
+mlodsze = filtruj_osoby(osoby, jest_ponizej_30)
+print(f'osoby mlodsze niz 30 lat: {przetworz_osoby(mlodsze, pobierz_imie)}')
 
