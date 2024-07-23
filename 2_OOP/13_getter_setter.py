@@ -43,3 +43,11 @@ class Pracownik:
 pracownik = Pracownik("Jan Kowalski", 3000)
 print(pracownik)
 
+pracownik.pensja_podstawowa = 3500
+pracownik.bonus_procent = 15
+print(pracownik)
+
+try:
+    pracownik.bonus_procent = 110
+except ValueError as e:
+    print(e)
