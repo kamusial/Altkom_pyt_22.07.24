@@ -55,8 +55,9 @@ class UserManager:
     def update_user(self, user_id, name=None, age=None):
         self.db.update_user(user_id, name, age)
 
-    def delete_user(self, user_id):
-        self.db.delete_user(user_id)
+    def delete_user(self, *user_ids):
+        for user_id in user_ids:
+            self.db.delete_user(user_id)
 
     def list_users(self):
         users = self.db.get_users()
@@ -85,7 +86,7 @@ if __name__ == '__main__':
     user_manager.list_users()
 
     # Usunięcie uzytkownika
-    user_manager.delete_user(3)
+    user_manager.delete_user(4, 5, 6)
 
     # Wyświetl użytkowników
     print('All users:')
