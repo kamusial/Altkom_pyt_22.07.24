@@ -28,3 +28,12 @@ class Database:
         if self.conn:
             self.conn.commit()
 
+    def execute(self, query, params=None):
+        self.cursor.execute(query, params)
+
+    def fetchall(self):
+        return self.cursor.fetchall()
+
+    def fetchone(self):
+        return self.cursor.fetchone()
+
