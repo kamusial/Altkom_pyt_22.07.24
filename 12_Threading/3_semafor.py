@@ -20,6 +20,7 @@ for i in range(5):
     thread.start()
 
 for thread in threads:
-    thread.join()
+#   thread.is_alive()
+    thread.join(timeout=None)
 
 print('Wszystko zakonczone')

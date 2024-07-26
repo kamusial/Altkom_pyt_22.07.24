@@ -14,7 +14,10 @@ def test_2():
     assert fizzbuzz(-5) == None
 
 def test_3():
-    assert fizzbuzz(2.7) == 2
+    assert fizzbuzz(2.7) == '2'
     assert fizzbuzz(3.1) == 'Fizz'
     assert fizzbuzz(3.9) == 'Fizz'
     assert fizzbuzz(15.1) == 'FizzBuzz'
+
+def test_4():
+    assert fizzbuzz('mama') == None
